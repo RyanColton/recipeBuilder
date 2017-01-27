@@ -1,0 +1,8 @@
+<div class="parentSearchContainer">
+
+  <form>
+  <input type="text" placeholder="Search Food Here" ng-model="searchTerm">
+  <button type="button" name="button" ng-click="getSearchResults(searchTerm)">Search</button>
+</form>
+  <div ng-if="food" ui-grid='gridOptions' class="myGrid"></div>
+</div>
