@@ -1,4 +1,5 @@
 angular.module('recipeApp', ['ui.router', 'chart.js', 'ui.grid', 'tc.chartjs'])
+.constant('TweenMax', TweenMax)
 .config(function($stateProvider, $urlRouterProvider, ChartJsProvider){
   $urlRouterProvider.otherwise('/');
 

@@ -231,6 +231,15 @@ body {
   color: #2b9414;
   text-align: center; }
 
+.namer {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.under-construction {
+  margin-left: auto;
+  margin-right: auto; }
+
 /*!
  * ui-grid - v4.0.2 - 2016-12-30
  * Copyright (c) 2016 ; License: MIT

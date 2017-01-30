@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('recipeApp', ['ui.router', 'chart.js', 'ui.grid', 'tc.chartjs']).config(function ($stateProvider, $urlRouterProvider, ChartJsProvider) {
+angular.module('recipeApp', ['ui.router', 'chart.js', 'ui.grid', 'tc.chartjs']).constant('TweenMax', TweenMax).config(function ($stateProvider, $urlRouterProvider, ChartJsProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider.state('home', {
@@ -237,6 +237,14 @@ angular.module('recipeApp').controller('foodSearchResultsController', function (
 'use strict';
 
 angular.module('recipeApp').controller('homeController', function ($scope, mainService) {});
+
+angular.module('recipeApp').animation('.fade-in', function () {
+  return {
+    enter: function enter(element, done) {
+      TweenMax.fromTo(element, 1, { opacity: 0 }, { opacity: 1, onComplete: done });
+    }
+  };
+});
 "use strict";
 "use strict";
 'use strict';
@@ -351,6 +359,8 @@ angular.module('recipeApp').controller('searchDirCtrl', function ($scope, $state
       $scope.searchResults = response.data.list.item;
 
       $scope.food = true;
+    }).catch(function (error) {
+      alert('That didnt pull any results');
     });
   };
 });

@@ -27,6 +27,8 @@ angular.module('recipeApp').controller('searchDirCtrl', function($scope, $state,
       $scope.searchResults = response.data.list.item;
 
       $scope.food = true;
+    }).catch(function(error){
+      alert('That didnt pull any results');
     })
   }
 
