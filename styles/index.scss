@@ -1,0 +1,264 @@
+$darkest-color: #1e670e;
+$dark-color: #3BC31F;
+$med-color: #5AD640;
+$light-color: #97EE85;
+$lightest-color: #e7f4e4;
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: 100%;
+  background-color: $lightest-color;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto';
+  border-width: 1px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: $darkest-color;
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  color: $darkest-color;
+  font-size: 35px;
+}
+
+.header-button{
+  background: $dark-color;
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 21px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.header-button:hover{
+  background: $light-color;
+  background-image: -webkit-linear-gradient(top, $light-color, $dark-color);
+  background-image: -moz-linear-gradient(top, $light-color, $dark-color);
+  background-image: -ms-linear-gradient(top, $light-color, $dark-color);
+  background-image: -o-linear-gradient(top, $light-color, $dark-color);
+  background-image: linear-gradient(to bottom, $light-color, $dark-color);
+  text-decoration: none;
+}
+
+.home-page{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 90vh;
+  background-image: url(http://blog.gessato.com/wp-content/uploads/2015/04/lukes-local-fresh-food-delivery-1.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-text-container{
+  width: 50%;
+  height: 60%;
+  background-color: rgba($lightest-color, 0.9);
+  border-radius: 20px;
+  text-align: center;
+
+}
+.title{
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: 'Open Sans';
+
+}
+
+.emphasis{
+  font-weight: bold;
+  color: $med-color;
+}
+.emphasis:hover{
+  color: lighten($med-color, 10%);
+}
+.home-text-body{
+  color: darken($darkest-color, 10%);
+  font-size: 20px;
+  font-family: 'Open Sans';
+}
+.search-page{
+  margin-left: 40%;
+}
+
+.search-field{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+}
+.input-field{
+  margin-bottom: 30px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal "Helvetica", serif;
+  color: darken($darkest-color, 10%);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: lighten($lightest-color, 6%);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.myGrid {
+    width: 100%;
+    height: 70vh;
+    /*background-color: green;*/
+
+}
+.ui-grid-top-panel {
+    background: black;
+    color: darken($darkest-color, 5%);
+    font-weight: bold;
+    font-family: 'Roboto'
+  }
+.search-button{
+    background: $dark-color;
+    -webkit-border-radius: 14;
+    -moz-border-radius: 14;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 22px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.search-button:hover{
+  background: $light-color;
+  background-image: -webkit-linear-gradient(top, $light-color, $dark-color);
+  background-image: -moz-linear-gradient(top, $light-color, $dark-color);
+  background-image: -ms-linear-gradient(top, $light-color, $dark-color);
+  background-image: -o-linear-gradient(top, $light-color, $dark-color);
+  background-image: linear-gradient(to bottom, $light-color, $dark-color);
+  text-decoration: none;
+}
+
+.grid-button{
+  display: none;
+  background: $dark-color;
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  width: 80px;
+  margin-left: 30%;
+}
+.ui-grid-row:hover .grid-button{
+  display: block;
+}
+.ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color: $lightest-color;
+}
+
+.search-results-main-container{
+  display: flex;
+  justify-content: center;
+}
+.search-result-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-title{
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-size: 30px;
+  color: lighten($darkest-color, 10%);
+  text-align: center;
+}
+
+.main-result-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.nut-value{
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: darken($darkest-color, 5%);
+
+}
+
+.calories{
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: $darkest-color;
+
+}
+
+.values{
+  margin-left: 5px;
+  font-family: 'Roboto';
+  color: darken($darkest-color, 5%);
+}
+
+.sub-value{
+  margin-left: 15px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: darken($darkest-color, 10%);
+}
+
+
+.pie-chart{
+  width: 300px;
+  height: 300px;
+}
+
+.nutrient-title {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    color: #2b9414;
+    text-align: center;
+}

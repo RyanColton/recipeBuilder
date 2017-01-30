@@ -17,7 +17,7 @@ angular.module('recipeApp').controller('searchDirCtrl', function($scope, $state,
     columnDefs: [{field: 'name', displayName: 'Name'},
     {field: 'group', displayName: 'Group'},
     {field: 'ndbno', displayName: 'NDBNO'},
-    {field: 'function', cellTemplate: '<button ng-click="grid.appScope.grabFoodId(row)">See nutrition</button>'}
+    {field: 'function', cellTemplate: '<div class="grid-button" ng-click="grid.appScope.grabFoodId(row)">See nutrition</div>', displayName:'See Nutrition'}
     ],
     data: 'searchResults',
     excessRows: '4'

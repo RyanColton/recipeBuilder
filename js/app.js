@@ -1,4 +1,4 @@
-angular.module('recipeApp', ['ui.router', 'chart.js', 'ui.grid'])
+angular.module('recipeApp', ['ui.router', 'chart.js', 'ui.grid', 'tc.chartjs'])
 .config(function($stateProvider, $urlRouterProvider, ChartJsProvider){
   $urlRouterProvider.otherwise('/');
 
@@ -34,5 +34,11 @@ angular.module('recipeApp', ['ui.router', 'chart.js', 'ui.grid'])
     controllers:'foodSearchResultsController'
   })
 
+  ChartJsProvider.setOptions({
+        tooltips: {
+          enabled: true,
+          mode: 'point',
+         }
+      });
 
 })

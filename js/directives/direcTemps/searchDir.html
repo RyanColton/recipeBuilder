@@ -1,8 +1,8 @@
 <div class="parentSearchContainer">
 
-  <form>
-  <input type="text" placeholder="Search Food Here" ng-model="searchTerm">
-  <button type="button" name="button" ng-click="getSearchResults(searchTerm)">Search</button>
+  <form class="search-field">
+  <input class="input-field" type="text" placeholder="Search Food Here" ng-model="searchTerm">
+  <div type="button" name="button" ng-click="getSearchResults(searchTerm)" class="search-button">Search</div>
 </form>
   <div ng-if="food" ui-grid='gridOptions' class="myGrid"></div>
 </div>
