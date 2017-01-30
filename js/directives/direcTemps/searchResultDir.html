@@ -4,11 +4,11 @@
     <div class="main-info-container fade-left">
       <div class="nut-value">Nutritional Value, Per 100 Grams</div>
       <p class="calories">Calories: {{foodNutrition.food.nutrients[1].value + foodNutrition.food.nutrients[1].unit}} </p>
-      <p class="values">Carbohydrates: {{foodNutrition.food.nutrients[4].value + foodNutrition.food.nutrients[4].unit}}</p>
+      <div class="table-box carb-color"></div><p class="values">Carbohydrates: {{foodNutrition.food.nutrients[4].value + foodNutrition.food.nutrients[4].unit}}</p>
           <p class="sub-value">Sugars: {{foodNutrition.food.nutrients[6].value + foodNutrition.food.nutrients[6].unit}}</p>
           <p class="sub-value">Fiber: {{foodNutrition.food.nutrients[5].value + foodNutrition.food.nutrients[5].unit}}</p>
-      <p class="values">Protein: {{foodNutrition.food.nutrients[2].value + foodNutrition.food.nutrients[2].unit}}</p>
-      <p class="values">Fats: {{foodNutrition.food.nutrients[3].value + foodNutrition.food.nutrients[3].unit}}</p>
+      <div class="table-box protien-color"></div><p class="values">Protein: {{foodNutrition.food.nutrients[2].value + foodNutrition.food.nutrients[2].unit}}</p>
+      <div class="table-box fat-color"></div><p class="values">Fats: {{foodNutrition.food.nutrients[3].value + foodNutrition.food.nutrients[3].unit}}</p>
           <p class="sub-value">Saturated Fat: {{foodNutrition.food.nutrients[27].value + foodNutrition.food.nutrients[27].unit}}</p>
       <p class="values">Water: {{foodNutrition.food.nutrients[0].value + foodNutrition.food.nutrients[0].unit}}</p>
     </div>

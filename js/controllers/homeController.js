@@ -1,8 +1,7 @@
 angular.module('recipeApp').controller('homeController', function($scope, mainService){
 
 
-
-})
+}) 
 
 // angular.module('recipeApp').animation('.fade-n', function(){
 //   return{
