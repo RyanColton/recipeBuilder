@@ -66,7 +66,7 @@ body{
 }
 .home-text-container{
   width: 50%;
-  height: 60%;
+  height: 40%;
   background-color: rgba($lightest-color, 0.9);
   border-radius: 20px;
   text-align: center;
@@ -93,6 +93,7 @@ body{
   color: darken($darkest-color, 10%);
   font-size: 20px;
   font-family: 'Open Sans';
+  padding: 15px;
 }
 .search-page{
   margin-left: 40%;
@@ -274,3 +275,15 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+
+.fade-top{
+  position:relative;
+  -webkit-animation:animatetop 0.4s;
+  animation:animatetop 0.6s
+}
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+.fade-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.6s}
+@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}

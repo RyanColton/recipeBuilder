@@ -194,6 +194,7 @@ angular.module('recipeApp')
 
 
   $scope.chartOptions = {
+    color: "#e7f4e4",
     tooltips: {
       mode: 'dataset',
     },

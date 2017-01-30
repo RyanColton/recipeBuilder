@@ -200,6 +200,7 @@ angular.module('recipeApp').controller('foodSearchResultsController', function (
   $scope.pullFoodNutrition();
 
   $scope.chartOptions = {
+    color: "#e7f4e4",
     tooltips: {
       mode: 'dataset'
     },
@@ -238,13 +239,13 @@ angular.module('recipeApp').controller('foodSearchResultsController', function (
 
 angular.module('recipeApp').controller('homeController', function ($scope, mainService) {});
 
-angular.module('recipeApp').animation('.fade-in', function () {
-  return {
-    enter: function enter(element, done) {
-      TweenMax.fromTo(element, 1, { opacity: 0 }, { opacity: 1, onComplete: done });
-    }
-  };
-});
+// angular.module('recipeApp').animation('.fade-n', function(){
+//   return{
+//     enter: function(element, done){
+//       TweenMax.to(element, 1, {opacity:100} )
+//     }
+//  }
+// })
 "use strict";
 "use strict";
 'use strict';
